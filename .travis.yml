@@ -6,3 +6,7 @@ deploy:
   file: build/libs/blackjack.jar
   on:
     tags: true
+branches:
+  only:
+    - master
+    - /^v.*$/
