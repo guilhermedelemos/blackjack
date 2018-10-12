@@ -1,15 +1,18 @@
 language: java
 branches:
   only:
-    - master
-    - /^v.*$/
+  - master
+  - "/^v.*$/"
 before_deploy:
- - echo $TRAVIS_TAG
+- echo $TRAVIS_TAG
 deploy:
   skip_cleanup: true
   provider: releases
   api_key:
     secure: L8yvSjEqp1u546JWmbcaVhiD6GWFxMjnyo0qhWRcs1VzatUsNMgXckkkMndWk4NiUUOT3yWaE/q95oR1LQvxYtK3VLMNmmDCqGVTZVdZzQ6bkxUBSm1g5pLBRmoPGNqgjUfnKHX0ReY6d6k0uM39u7u92zlKCvfBuesTlu/v+DQpEbGEpQFRqcUAH6QPk/Vgdk4zEwMrjhOn2WRE3J0mLMfEreuQZy5X8/8uLPHWDrrZ/YFGajbHI6sPtK/I889JerogVVHUsvSWNg9gY/mfx1GfKUpwVwByzpMUNkdjU7sB9x0nup+HaOnxD2XV/gFbQapAL8DAZvffZI7hZEvN0apx5aOxT1nvJl4K79coVlPUlgrp0Uwa4meZBC86vevz1+2dzSClMpt0R1+UPOA4fXJds6H6PhCp+KvNDyp27S3tYxaMoOIUv5VhVN8VTMbX6n9ooyE5fTCMEDWpDMVFWMvhPqRBTsi0TwbYelbfDxxOzEMPg7wFJFNPF7uOjUFe5JIRnIxUOizT/3ID8JwAMItLMIRoA16K0Zar4Fni0ZXhsYEzje+SLGwGciNyQxSUvVxesLOKsU+o42Ow0lZc7h3rR0pU9prqIJp3Ap1/JGnlGo8FTaLcLqfq36Ab2T775xd4pwAgctqzNRO+nhdTf1csaPgUZT+Qm5JLAcjAZbQ=
-  file: $TRAVIS_BUILD_DIR/build/libs/blackjack.jar
+  file: "$TRAVIS_BUILD_DIR/build/libs/blackjack.jar"
   on:
     tags: true
+env:
+  global:
+    secure: Ka/+YCc+sXdzNZFPAsXnxdD4uKgQEnAYjOkgSG6O6IA1oa96ZZxSgQKeDPF3rj1wvp4Py2GyqTI2/I0RcrjYhEzh8UBaSD7L2NhpIYfubna6kOK2Ynwg05sXzaTeFZVZAG6jTRc6Y4CR2pS9iUL4VLb3YGjGb0cBBvDSrewx2h11A6dspQPFHtziH7QHCSNbcmi884U3NkNMUaqQMAAHbv3c9HlnVMAf8+s9aLB2b1wcUGncuZLwJvRhuhNQGq6rGUB4kB/VLKa3qthEy9etASAeBPh68ufed9Ljcf9CnCunkjesUZin8cE99Sabs8FcSmRr0NWnGeVfN6TXUzpgPXmnjtVSS0+Q4rNM6u83lUjWAiyFAFfJAj990iE71sor2q1/GUBPCrH8Ii2k/9FzcSUbiGW0U2H8y9iX/Q46Apdk8Gt+t/aoayI8jeC5JhXxbuiPR7nvqMkEi70KFks+u7uXfyVa8aIHEngPqXLMVe+/92Icgmlw2QgZG0lHVZwZxtKNeHNziwWdtKeVlmfNPmGzq76ZNRVYnjaBrUXkTiF/SznapcykM2vmDmpPIdjTqBV8kv53YygwFqxxrS4WVHoR0tRcikAV5uErKGO+oOcqxMXkpVIygoP1nWFlVuROPD8MDwOCDF5OSHJginXGkS+Fp0EffLcZ3y6M/8WQxi4=
