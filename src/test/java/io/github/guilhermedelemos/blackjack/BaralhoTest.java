@@ -10,7 +10,7 @@ public class BaralhoTest {
         Baralho baralho = new Baralho();
         Carta carta = baralho.puxar();
         assertNotNull(carta);
-        assertEquals(52, baralho.getBaralho().size());
+        assertEquals(51, baralho.getBaralho().size());
     }
     
 }
