@@ -1,8 +1,2 @@
 language: java
-addons:
-  sonarcloud:
-    organization: "guilhermedelemos-github"
-    token:
-      secure: "FPtMwHcY+s0ouBk2pxFfgOIf/SjI+X6ZsUfE16y4Sg4XPINjvqAGnV8cuypQupGmxg6C6FOWtr4c3tfKcjyl8B8C5cG4j5gnkLNe1+9V/6YWLjZLOiIOiVQdztO90YX2W76IgPK+G8GlFwY793VRrN1tc2Ia7aVEKz5PGPPO//RrUcC6o+hYFndc4DYDOIxBImZQWfLi4ykd8QgD5ehZqaKxFergEYcBq9wmFwZPTQn49u7zAUwSOCBbQPNXGO+yVi2w84szNR+R9ZE+Q0SIH9C6uo28g2cv2QNSgQzNkEgyeBgZg5oNwlBo7gRGeF/tFdJfKABOmZWci58bk6ET4QOpLnhR7iDosJTv9ilJ+KMrmv3V18Zk4qhctuZtgsnY2ixDztdogLOHQlSwPq7T4fjsWWniIfKAdEJORP0LNL6kLMkXM/GkmPYBILiaykXFF+6i8Ry0GHF9UVL1GDQVk0hEivFdZjqnt+nMk+s/+WmmCIpuF2vXPCzLRoiYBy2qXPwlMcAsRR5EhHTLFU0WQfbz5Cj2Hg8+Kiu7O4SnlvQZNn1SAzxlG3NIqXNp1h2ESPL4rW7mXraVz3cOZDG3DK2frGAbg0Gu+LZLkqY/eFoh7iYEDvlWM6AqjFUGmKOdj9OT0brYCIU7IKGP8Je1glo1rD58H6JahN/egDkkSKc="
-script:
-  - sonar-scanner
+
