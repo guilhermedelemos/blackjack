@@ -7,7 +7,7 @@ import java.util.List;
 public class Deck {
 
     private List<Card> cards;
-    private int size;
+    private int originalSize;
 
     public Deck() {
         this.createDeck();
@@ -36,7 +36,7 @@ public class Deck {
                 new Card(Card.KING, Suit.values()[i], 10)
             );
         }
-        this.size = this.cards.size();
+        this.originalSize = this.cards.size();
         this.shuffle();
     }
 
@@ -58,7 +58,7 @@ public class Deck {
     }
 
     public int cardsDiscarded() {
-        return this.cards.size() - this.size;
+        return this.originalSize - this.cards.size();
     }
 
 }

@@ -11,13 +11,22 @@ public class DeckTest {
 
     @Test void drawTest() {
         Deck deck = new Deck();
-        int amount = deck.cardsLeft();
         Card card = deck.draw();
         assertNotNull(card);
-        assertTrue(deck.cardsLeft() < amount);
-
     }
 
+    @Test void cardsLeft() {
+        Deck deck = new Deck();
+        int amount = deck.cardsLeft();
+        deck.draw();
+        assertTrue(deck.cardsLeft() < amount);
+    }
 
+    @Test void cardsDiscarded() {
+        Deck deck = new Deck();
+        int amount = deck.cardsDiscarded();
+        deck.draw();
+        assertTrue(deck.cardsDiscarded() > amount);
+    }
 
 }
