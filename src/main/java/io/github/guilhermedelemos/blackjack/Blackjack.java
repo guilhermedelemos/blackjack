@@ -25,7 +25,7 @@ public class Blackjack {
         this.userInterface.sleep();
 
         String iniciarJogo = this.userInterface.read("Deseja iniciar o jogo? (S/N)");
-        if(iniciarJogo.toUpperCase().equals("N")) {
+        if(iniciarJogo.equals("N")) {
             return;
         }
 
@@ -62,8 +62,7 @@ public class Blackjack {
             }
 
         } while(
-            this.userInterface.read("Deseja sacar uma carta? (S/N)")
-                .toUpperCase().equals("S")
+            this.userInterface.read("Deseja sacar uma carta? (S/N)").equals("S")
         );
 
         /* COMPUTADOR */
