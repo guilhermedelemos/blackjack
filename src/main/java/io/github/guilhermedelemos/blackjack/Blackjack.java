@@ -81,7 +81,7 @@ public class Blackjack {
             }
 
             if(this.computer.getPoints() > 21) {
-                this.userInterface.println("Você venceu.");
+                this.userInterface.println("Você venceu!");
                 return;
             }
 
