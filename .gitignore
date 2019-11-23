@@ -5,3 +5,4 @@ nbproject/
 *.log
 *.class
 .idea/
+.attach_pid*

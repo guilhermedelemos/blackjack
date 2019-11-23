@@ -1,5 +1,7 @@
 package io.github.guilhermedelemos.blackjack;
 
+import java.util.Objects;
+
 public class Card {
 
     public static final String ACE = "A";
@@ -19,6 +21,21 @@ public class Card {
         this.rank = rank;
         this.suit = suit;
         this.value = value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Card card = (Card) o;
+        return value == card.value &&
+                Objects.equals(rank, card.rank) &&
+                suit == card.suit;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(rank, suit, value);
     }
 
     @Override

@@ -34,13 +34,16 @@ public class Player {
     }
 
     private void calculatePoints() {
-        this.points = this.cards.stream().mapToInt(cards -> cards.getValue()).sum();
-        /*
-        int soma = 0;
+        this.points = this.cards
+                .stream()
+                .mapToInt(cards -> cards.getValue())
+                .sum();
+
+        /*int soma = 0;
         for(int i = 0; i< this.cards.size(); i++) {
             soma += this.cards.get(i).getValue();
-        }
-        */
+        }*/
+
     }
 
     public List<Card> getAllCards() {
